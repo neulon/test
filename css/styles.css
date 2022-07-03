@@ -1,0 +1,327 @@
+:root {
+  --secod-bgcr: #f5f4fa;
+  --footer-bgc: #2f303a;
+  --main-text: #212121;
+  --second-text: #757575;
+  --hover-text: #2196f3;
+  --white-text: #ffffff;
+  --black-text: #000000;
+  --black-transparency: rgba (255, 255, 255, 0,6)
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  color: var(--second-text);
+  letter-spacing: 0.03em;
+  font-size: 14px;
+  line-height: 1.71;
+}
+
+h1,h2,h3,ul,p {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+  min-width: 100%;
+  height: auto;
+}
+
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.section.doing {
+  padding-top: 0;
+}
+
+.header {
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  border-bottom : 1px solid #ECECEC;
+}
+
+.link {
+  text-decoration: none;
+  color: currentColor;
+}
+
+.card-set {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.card-item3 {
+  flex-basis: calc((100% - 60px)/3);
+}
+
+.card-item4 {
+  flex-basis: calc((100% - 90px)/4);
+}
+
+.footer {
+  background-color: var(--footer-bgc);
+  padding-top: 60px;
+  padding-bottom: 60px;
+  padding-left: 0px;
+}
+
+.team {
+  background: var(--secod-bgcr);
+}
+
+.list {
+  list-style: none;
+}
+
+.logo {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  color: var(--hover-text);
+
+  margin-right: 93px;
+}
+
+.logo-white {
+  color: var(--white-text);
+}
+
+.logo-black {
+  color: var(--black-text);
+}
+
+.logo-part {
+  color: var(--hover-text);
+}
+
+.logo.footer {
+  margin-bottom: 20px;
+}
+
+.contacts-item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.nav-item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.nav-link:focus,
+.nav-link:hover {
+  color: var(--hover-text);
+}
+
+.nav-header {
+  display: flex;
+  align-items: center;
+}
+
+.nav-list {
+  color: var(--main-text);
+
+  display: flex;
+;
+}
+
+.contacts-list {
+  display: flex;
+  margin-left: auto;
+}
+
+.nav-link {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  display: block;
+}
+
+.contacts-link:focus,
+.contacts-link:hover {
+  color: var(--hover-text);
+}
+
+.section-hero {
+  background-color: var(--footer-bgc);
+  text-align: center;
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
+
+.hero-title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--white-text);
+  margin-bottom: 30px;
+}
+
+.main-button {
+  border: none;
+  background-color: var(--hover-text);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  min-width: 200px;
+  padding: 10px 32px;
+
+  cursor: pointer;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  color: var(--white-text);
+  font-family: inherit;
+}
+
+.main-button:focus,
+.main-button:hover {
+  background-color: #188ce8;
+}
+
+.feature-title {
+  margin-bottom: 10px;
+}
+
+.section-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  color: var(--main-text);
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.feature-title {
+  font-weight: 700;
+  line-height: 1.42;
+  text-transform: uppercase;
+  color: var(--main-text);
+  font-size: 14px;
+}
+
+.hidden-section-title {
+  display: none;
+}
+
+.team-item {
+  padding-bottom: 30px;
+}
+
+.team-name {
+  font-weight: 500;
+  color: var(--main-text);
+  margin-bottom: 10px;
+}
+
+.team-text,
+.team-name {
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+}
+
+.address {
+  font-size: inherit;
+  font-style: inherit;
+}
+
+.address-link[target="_blank"] {
+  color: var(--white-text);
+}
+
+.address-link:focus,
+.address-link:hover {
+  color: var(--hover-text);
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.address-item + .address-item {
+  margin-top: 9px;
+}
+
+.button-list {
+  display: flex;
+  margin-bottom: 50px;
+  justify-content: center;
+}
+
+.button-item + .button-item {
+  margin-left: 8px;
+}
+
+.filter-button {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.63;
+  color: var(--main-text);
+  font-family: inherit;
+
+  border: none;
+  padding: 6px 22px;
+  background-color: var(--secod-bgcr);
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.filter-button:focus,
+.filter-button:hover {
+  background-color: var(--hover-text);
+  color: var(--white-text);
+}
+
+.job-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--main-text);
+  margin-bottom: 4px;
+}
+
+.job-text {
+  font-size: 16px;
+  line-height: 1.88;
+}
+
+
+.job-container {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+.job-item {
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+
+.container-name {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
